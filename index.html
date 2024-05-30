@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense tracker</title>
+</head>
+
+<body>
+    <center>
+       <h2>Expense Tracker</h2>
+    </center>
+
+    <div class="container">
+        <h4>Current Balance</h4>
+        <h1 id="Balance">$0.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Amount Credited</h4>
+                <p id="money-plus" class="money-plus">+$0.00</p>
+
+            </div>
+
+            <div>
+                <h4>Amount Deducted</h4>
+                <p id="money-minus" class="money minus">-$0.00</p>
+
+            </div>
+
+            <h3>Add new transaction</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">Transaction subject</label>
+                    <input type="text" id="text" placeholder="enter transaction subject">
+                </div>
+
+                <div class="form-control">
+                    <label for="income-text">Amount credited</label>
+                    <input type="number" id="income-text" placeholder="Enter the amount credited">
+                </div>
+
+                <div class="form-control">
+                    <label for="expense-text">Amount Deducted</label>
+                    <input type="number" id="expense-text" placeholder="Enter the amount deducted">
+                </div>
+
+                <h3>Transactions</h3>
+                <ul id="list" class="list">
+                    <!-- Transaction items will be added here dynamically -->
+                </ul>
+
+                <button class="btn">Add Transaction</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
